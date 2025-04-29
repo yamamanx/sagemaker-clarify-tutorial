@@ -21,8 +21,6 @@ Mappings:
   ARNs:
     us-east-1:
       arn: arn:aws:sagemaker:us-east-1:081325390199:image/jupyter-server-3
-    us-east-1:
-      arn: arn:aws:sagemaker:us-east-1:081325390199:image/jupyter-server-3
     us-east-2:
       arn: arn:aws:sagemaker:us-east-2:429704687514:image/jupyter-server-3
     us-west-1:
@@ -1010,7 +1008,7 @@ Resources:
     DependsOn: StudioUserProfile
     Properties:
       AppName: instance-event-engine-datascience-ml-t3-medium
-      AppType: KernelGateway
+      AppType: JupyterLab
       DomainId: !GetAtt StudioDomain.DomainId
       ResourceSpec:
         InstanceType:  ml.t3.medium
