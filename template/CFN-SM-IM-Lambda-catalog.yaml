@@ -1023,7 +1023,7 @@ Resources:
     DependsOn: StudioUserProfile
     Properties:
       AppName: instance-event-engine-datawrangler-ml-m5-4xlarge
-      AppType: KernelGateway
+      AppType: JupyterLab
       DomainId: !GetAtt StudioDomain.DomainId
       ResourceSpec:
         InstanceType:  ml.m5.4xlarge
